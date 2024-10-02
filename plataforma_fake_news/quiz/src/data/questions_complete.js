@@ -1,0 +1,295 @@
+const data = [
+  {
+    category: "Desinformação (Identifique a Fake News)",
+    questions: [
+      {
+        question: "Qual das seguintes afirmações sobre as vacinas contra a COVID-19 é falsa?",
+        options: [
+          "As vacinas contra COVID-19 foram testadas em milhares de pessoas antes da aprovação.",
+          "As vacinas são eficazes na prevenção de doenças graves.",
+          "As vacinas podem causar efeitos colaterais em algumas pessoas.",
+          "As vacinas contra COVID-19 contêm vírus vivos que podem causar a doença.",
+        ],
+        answer: "As vacinas contra COVID-19 contêm vírus vivos que podem causar a doença.",
+        tip: "As vacinas contra COVID-19 usam partes do vírus ou vírus inativados para gerar imunidade, mas não podem causar a doença.",
+      },
+      {
+        question: "Qual dessas notícias sobre o aquecimento global é falsa?",
+        options: [
+          "O aquecimento global é causado principalmente por atividades humanas.",
+          "As emissões de gases de efeito estufa estão aumentando rapidamente.",
+          "A mudança climática não tem impactos significativos na agricultura.",
+          "O aumento da temperatura global está afetando os padrões climáticos.",
+        ],
+        answer: "A mudança climática não tem impactos significativos na agricultura.",
+        tip: "A mudança climática está alterando a produtividade agrícola em várias regiões do mundo.",
+      },
+      {
+        question: "Qual das seguintes afirmações sobre a guerra na Ucrânia é falsa?",
+        options: [
+          "A Rússia invadiu a Ucrânia em 2022.",
+          "A Ucrânia está recebendo apoio internacional.",
+          "A Ucrânia não tem exércitos e depende apenas de ajuda externa.",
+          "A guerra na Ucrânia resultou em sanções contra a Rússia.",
+        ],
+        answer: "A Ucrânia não tem exércitos e depende apenas de ajuda externa.",
+        tip: "A Ucrânia tem forças armadas que estão resistindo ativamente à invasão.",
+      },
+      {
+        question: "Qual dessas afirmações sobre saúde mental é falsa?",
+        options: [
+          "Os transtornos mentais são comuns e afetam muitas pessoas.",
+          "A terapia pode ser eficaz para tratar problemas de saúde mental.",
+          "As doenças mentais só afetam adultos.",
+          "A saúde mental é tão importante quanto a saúde física.",
+        ],
+        answer: "As doenças mentais só afetam adultos.",
+        tip: "As doenças mentais podem afetar pessoas de todas as idades, incluindo crianças e adolescentes.",
+      },
+      {
+        question: "Qual das seguintes alegações sobre alimentação saudável é falsa?",
+        options: [
+          "Dietas restritivas podem ser prejudiciais à saúde.",
+          "Todos os açúcares são iguais em termos de impacto na saúde.",
+          "Comer frutas e vegetais é benéfico para a saúde.",
+          "A variedade na alimentação é importante para uma dieta equilibrada.",
+        ],
+        answer: "Todos os açúcares são iguais em termos de impacto na saúde.",
+        tip: "A qualidade do açúcar e a quantidade consumida afetam a saúde de maneiras diferentes.",
+      },
+      {
+        question: "Qual das seguintes informações sobre a educação é falsa?",
+        options: [
+          "A aprendizagem pode ocorrer de várias maneiras, incluindo o aprendizado prático.",
+          "A educação formal é a única forma de adquirir conhecimento.",
+          "O ensino à distância pode ser eficaz para muitos alunos.",
+          "O desenvolvimento de habilidades é importante para o mercado de trabalho.",
+        ],
+        answer: "A educação formal é a única forma de adquirir conhecimento.",
+        tip: "Aprendizados informais e práticos também são fundamentais para o aprendizado ao longo da vida.",
+      },
+      {
+        question: "Qual dessas afirmações sobre tecnologias emergentes é falsa?",
+        options: [
+          "As tecnologias emergentes estão mudando a forma como vivemos.",
+          "A inteligência artificial é infalível e nunca comete erros.",
+          "O uso de tecnologias pode trazer riscos à privacidade.",
+          "A realidade aumentada tem aplicações em várias áreas.",
+        ],
+        answer: "A inteligência artificial é infalível e nunca comete erros.",
+        tip: "A inteligência artificial pode cometer erros e deve ser usada com cautela.",
+      },
+      {
+        question: "Qual das seguintes notícias sobre nutrição é falsa?",
+        options: [
+          "A gordura é um nutriente essencial em uma dieta equilibrada.",
+          "Todos os alimentos com baixo teor de gordura são saudáveis.",
+          "A dieta balanceada deve incluir uma variedade de alimentos.",
+          "Os alimentos processados podem conter aditivos prejudiciais.",
+        ],
+        answer: "Todos os alimentos com baixo teor de gordura são saudáveis.",
+        tip: "Nem todos os alimentos com baixo teor de gordura são automaticamente saudáveis, pois podem conter açúcares ou aditivos prejudiciais.",
+      },
+      {
+        question: "Qual das seguintes afirmações sobre desastres naturais é falsa?",
+        options: [
+          "Terremotos podem ocorrer em qualquer lugar do mundo.",
+          "Mudanças climáticas podem aumentar a frequência de desastres naturais.",
+          "Tsunamis só podem ocorrer após terremotos.",
+          "A atividade humana não tem relação com a frequência de desastres naturais.",
+        ],
+        answer: "A atividade humana não tem relação com a frequência de desastres naturais.",
+        tip: "Atividades humanas, como desmatamento e urbanização, podem aumentar a vulnerabilidade a desastres naturais.",
+      },
+      {
+        question: "Qual das seguintes alegações sobre esportes é falsa?",
+        options: [
+          "Praticar esportes pode melhorar a saúde física e mental.",
+          "A atividade física é benéfica para a saúde a longo prazo.",
+          "A prática de esportes não tem impacto na vida social.",
+          "Os esportes podem ser uma forma de aliviar o estresse.",
+        ],
+        answer: "A prática de esportes não tem impacto na vida social.",
+        tip: "Os esportes muitas vezes promovem interações sociais e trabalho em equipe.",
+      },
+      {
+        question: "Qual dessas alegações sobre nutrição é falsa?",
+        options: [
+          "As dietas extremas podem causar deficiências nutricionais.",
+          "O jejum intermitente é uma prática saudável para todos.",
+          "A água é essencial para a saúde.",
+          "Os alimentos processados podem ter aditivos prejudiciais.",
+        ],
+        answer: "O jejum intermitente é uma prática saudável para todos.",
+        tip: "O jejum intermitente pode não ser adequado para todos e deve ser feito com cautela.",
+      },
+      {
+        question: "Qual das seguintes afirmações sobre a saúde bucal é falsa?",
+        options: [
+          "Escovar os dentes regularmente previne cáries.",
+          "O uso do fio dental é desnecessário para a saúde bucal.",
+          "Visitas regulares ao dentista são importantes para manter a saúde dental.",
+          "O açúcar pode contribuir para problemas dentários.",
+        ],
+        answer: "O uso do fio dental é desnecessário para a saúde bucal.",
+        tip: "O uso do fio dental é essencial para remover a placa entre os dentes onde a escova não alcança.",
+      },
+      {
+        question: "Qual dessas alegações sobre o sono é falsa?",
+        options: [
+          "A falta de sono pode afetar a saúde mental.",
+          "Todos precisam da mesma quantidade de sono.",
+          "O sono de qualidade é importante para a saúde geral.",
+          "Crianças geralmente precisam de mais sono do que adultos.",
+        ],
+        answer: "Todos precisam da mesma quantidade de sono.",
+        tip: "As necessidades de sono variam de pessoa para pessoa, dependendo da idade e da saúde.",
+      },
+      {
+        question: "Qual das seguintes afirmações sobre dietas é falsa?",
+        options: [
+          "Dietas milagrosas são a melhor maneira de emagrecer.",
+          "Uma dieta equilibrada deve incluir diferentes grupos alimentares.",
+          "Reduzir a ingestão de calorias pode ajudar na perda de peso.",
+          "É importante consultar um nutricionista ao mudar a dieta.",
+        ],
+        answer: "Dietas milagrosas são a melhor maneira de emagrecer.",
+        tip: "Dietas saudáveis e sustentáveis são mais eficazes do que soluções rápidas.",
+      },
+      {
+        question: "Qual das seguintes informações sobre álcool é falsa?",
+        options: [
+          "O consumo moderado de álcool pode ter alguns benefícios à saúde.",
+          "Beber álcool não afeta a coordenação motora.",
+          "O consumo excessivo de álcool pode causar problemas de saúde.",
+          "Algumas pessoas podem ser mais sensíveis ao álcool do que outras.",
+        ],
+        answer: "Beber álcool não afeta a coordenação motora.",
+        tip: "O álcool pode prejudicar a coordenação motora e aumentar o risco de acidentes.",
+      },
+      {
+        question: "Qual das seguintes alegações sobre a obesidade é falsa?",
+        options: [
+          "A obesidade é uma questão de saúde pública em muitos países.",
+          "A obesidade é sempre causada por falta de disciplina.",
+          "Fatores genéticos podem influenciar o peso corporal.",
+          "O tratamento da obesidade pode envolver mudanças no estilo de vida.",
+        ],
+        answer: "A obesidade é sempre causada por falta de disciplina.",
+        tip: "A obesidade é uma condição complexa que pode ser influenciada por vários fatores, incluindo genética e ambiente.",
+      },
+      {
+        question: "Qual dessas afirmações sobre as vacinas é falsa?",
+        options: [
+          "As vacinas são uma forma eficaz de prevenir doenças.",
+          "As vacinas podem causar autismo em crianças.",
+          "A vacinação ajuda a proteger a comunidade.",
+          "A maioria das vacinas é testada rigorosamente antes da aprovação.",
+        ],
+        answer: "As vacinas podem causar autismo em crianças.",
+        tip: "Não há evidências científicas que comprovem a relação entre vacinas e autismo.",
+      },
+      {
+        question: "Qual das seguintes informações sobre a hipertensão é falsa?",
+        options: [
+          "A hipertensão é frequentemente chamada de 'assassino silencioso'.",
+          "A hipertensão só afeta pessoas mais velhas.",
+          "O estresse pode contribuir para a hipertensão.",
+          "Uma dieta saudável pode ajudar a controlar a pressão arterial.",
+        ],
+        answer: "A hipertensão só afeta pessoas mais velhas.",
+        tip: "A hipertensão pode afetar pessoas de todas as idades, incluindo jovens.",
+      },
+      {
+        question: "Qual dessas alegações sobre a poluição é falsa?",
+        options: [
+          "A poluição do ar pode afetar a saúde respiratória.",
+          "A poluição não tem impacto na mudança climática.",
+          "Os plásticos são uma fonte significativa de poluição.",
+          "A poluição da água pode afetar a vida marinha.",
+        ],
+        answer: "A poluição não tem impacto na mudança climática.",
+        tip: "A poluição, especialmente as emissões de gases de efeito estufa, está diretamente relacionada à mudança climática.",
+      },
+      {
+        question: "Qual das seguintes afirmações sobre o diabetes é falsa?",
+        options: [
+          "O diabetes tipo 1 é causado por fatores genéticos.",
+          "O diabetes tipo 2 pode ser prevenido com um estilo de vida saudável.",
+          "Pessoas com diabetes não podem consumir açúcar.",
+          "O controle do diabetes é importante para prevenir complicações.",
+        ],
+        answer: "Pessoas com diabetes não podem consumir açúcar.",
+        tip: "Pessoas com diabetes podem consumir açúcar, mas devem monitorar a quantidade e o tipo de carboidratos.",
+      },
+      {
+        question: "Qual dessas alegações sobre saúde cardíaca é falsa?",
+        options: [
+          "A atividade física regular é boa para o coração.",
+          "A saúde cardíaca não é afetada pela dieta.",
+          "O tabagismo é um fator de risco para doenças cardíacas.",
+          "O controle do estresse pode beneficiar a saúde do coração.",
+        ],
+        answer: "A saúde cardíaca não é afetada pela dieta.",
+        tip: "Uma dieta saudável é crucial para manter a saúde cardíaca.",
+      },
+      {
+        question: "Qual das seguintes afirmações sobre a saúde óssea é falsa?",
+        options: [
+          "O cálcio é importante para a saúde dos ossos.",
+          "A vitamina D ajuda na absorção de cálcio.",
+          "Só as mulheres precisam se preocupar com a saúde óssea.",
+          "Exercícios de peso podem fortalecer os ossos.",
+        ],
+        answer: "Só as mulheres precisam se preocupar com a saúde óssea.",
+        tip: "A saúde óssea é importante para homens e mulheres de todas as idades.",
+      },
+      {
+        question: "Qual das seguintes alegações sobre o câncer é falsa?",
+        options: [
+          "O câncer pode ser causado por fatores ambientais.",
+          "Todos os tipos de câncer são preveníveis.",
+          "O tratamento precoce pode melhorar as chances de recuperação.",
+          "Os exames regulares podem ajudar na detecção precoce do câncer.",
+        ],
+        answer: "Todos os tipos de câncer são preveníveis.",
+        tip: "Embora muitos tipos de câncer possam ser prevenidos, outros fatores, como genética, também desempenham um papel.",
+      },
+      {
+        question: "Qual dessas afirmações sobre a saúde mental é falsa?",
+        options: [
+          "A saúde mental é tão importante quanto a saúde física.",
+          "A depressão é uma condição comum.",
+          "As pessoas com problemas de saúde mental podem sempre ser identificadas.",
+          "A terapia pode ajudar a tratar problemas de saúde mental.",
+        ],
+        answer: "As pessoas com problemas de saúde mental podem sempre ser identificadas.",
+        tip: "Os problemas de saúde mental podem ser invisíveis e não apresentam sintomas evidentes.",
+      },
+      {
+        question: "Qual das seguintes informações sobre a prevenção de doenças é falsa?",
+        options: [
+          "A vacinação é uma forma eficaz de prevenir doenças.",
+          "Uma dieta balanceada pode ajudar na prevenção de doenças.",
+          "Todos os problemas de saúde podem ser prevenidos.",
+          "A atividade física regular contribui para a saúde geral.",
+        ],
+        answer: "Todos os problemas de saúde podem ser prevenidos.",
+        tip: "Nem todas as condições de saúde podem ser prevenidas, mas muitos fatores de risco podem ser controlados.",
+      },
+      {
+        question: "Qual das seguintes alegações sobre a nutrição é falsa?",
+        options: [
+          "Os alimentos integrais são geralmente mais nutritivos do que os processados.",
+          "Todos os tipos de gordura são ruins para a saúde.",
+          "As proteínas são essenciais para o crescimento e reparação muscular.",
+          "As fibras são importantes para a saúde digestiva.",
+        ],
+        answer: "Todos os tipos de gordura são ruins para a saúde.",
+        tip: "Existem diferentes tipos de gordura, e algumas são essenciais para a saúde.",
+      },
+    ],
+  },
+];
+
+export default data;
