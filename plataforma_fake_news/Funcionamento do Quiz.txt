@@ -1,0 +1,11 @@
+O quiz sobre desinformação foi desenvolvido com o objetivo de conscientizar os usuários sobre a importância de identificar informações falsas na internet. Ele propõe uma experiência interativa e educativa, onde o usuário será desafiado a testar seu conhecimento sobre fake news, enquanto aprende a reconhecer sinais de desinformação.
+
+Funcionamento do Quiz
+Acesso ao Quiz: O usuário acessa o quiz por meio da plataforma web, navegando até a seção "Quiz de Desinformação". O layout é simples e intuitivo, projetado para oferecer uma experiência fluida.
+
+Estrutura das Perguntas: O quiz é composto por perguntas de múltipla escolha, cada uma abordando temas como notícias falsas, fontes duvidosas, táticas de desinformação e como checar a veracidade de uma informação. Cada pergunta terá entre três a quatro alternativas de resposta, sendo apenas uma correta.
+
+Pontuação: Ao final do quiz, o usuário recebe sua pontuação, onde indicara se o usuario é informado ou desinformado.
+
+Objetivo Educacional: Ao concluir o quiz, o usuário será incentivado a explorar mais conteúdos relacionados ao combate à desinformação, com sugestões de leitura e vídeos educacionais disponíveis na plataforma. A ideia é que o quiz não seja apenas um teste de conhecimento, mas também um ponto de partida para uma reflexão mais ampla sobre o impacto das fake news na sociedade.
+
