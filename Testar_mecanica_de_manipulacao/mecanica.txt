@@ -1,0 +1,26 @@
+Mecânicas de manipulação
+
+Truque dos números mágicos
+1.	Peça um número: A pessoa escolhe qualquer número (vamos chamar de xxx).
+2.	Multiplicação: Diga para multiplicar por 2 (2x2x2x).
+3.	Adicionar 8: Agora, some 8 (2x+82x + 82x+8).
+4.	Dividir por 2: Em seguida, divida o resultado por 2 ((2x+8)/2(2x + 8)/2(2x+8)/2), que simplifica para x+4x + 4x+4.
+5.	Subtrair o número original: Por fim, peça para subtrair o número original (x+4−xx + 4 - xx+4−x), que sempre dará 4.
+Assim, você sempre revela o número mágico final: 4! Essa é a mágica. Quer mais dicas?
+
+Jogo de sequencias
+ Os jogadores escolhem números em sequência e usam a soma ou a média para manipular a percepção do valor esperado. Por exemplo, se todos escolhem números baixos, um jogador pode escolher um número alto, alterando a média para parecer mais vantajoso.
+(caso não tenha entendido)
+1.	  Pense em um número de três dígitos, como 312.
+2.	Inverta os dígitos: 213.
+3.	Subtraia o menor do maior: 312−213=99312 - 213 = 99312−213=99.
+4.	Agora, some os dígitos do resultado: 9 + 9 = 18.
+  O resultado final será sempre 18, independentemente do número original!
+
+Multiplicação rápida com o número 9
+  Se você multiplicar qualquer número de 1 a 9 por 9, a soma dos dígitos do resultado sempre será 9.
+ Exemplo:
+•	9×2=189 \times 2 = 189×2=18 (1 + 8 = 9)
+•	9×3=279 \times 3 = 279×3=27 (2 + 7 = 9)
+•	9×5=459 \times 5 = 459×5=45 (4 + 5 = 9)
+  Impressão: Esse padrão de soma pode parecer misterioso para quem não conhece a lógica por trás dos múltiplos de 9.
