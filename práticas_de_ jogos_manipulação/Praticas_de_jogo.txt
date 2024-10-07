@@ -1,0 +1,61 @@
+Documentação para Feira Tecnológica: Manipulação em Jogos e IA
+
+Título do Projeto
+Manipulação em Jogos: Explorando Estratégias e Variações com Inteligência Artificial
+
+Introdução
+Os jogos são um campo rico para a exploração de estratégias de manipulação, onde a psicologia e a interação social desempenham papéis cruciais. Este projeto investiga diversas práticas de manipulação em jogos e propõe variações baseadas em inteligência artificial (IA), visando enriquecer a experiência de jogo e oferecer novos desafios.
+
+Objetivos
+Documentar práticas comuns de manipulação em jogos.
+Explorar como a IA pode gerar variações dessas práticas.
+Propor um modelo de jogo que utiliza essas variações para melhorar a dinâmica de interação.
+
+Metodologia
+1. Pesquisa e Documentação
+Identificação de Práticas de Manipulação: Análise de jogos populares para identificar táticas de manipulação, como bluffing, divisão e conquista, e manipulação emocional.
+Entrevistas e Questionários: Coleta de dados sobre as experiências dos jogadores com manipulação em jogos.
+
+2. Desenvolvimento de IA
+Treinamento de Algoritmos: Uso de machine learning para desenvolver algoritmos que simulam práticas de manipulação.
+Implementação de Game Theory: Aplicação de princípios da teoria dos jogos para otimizar a tomada de decisão da IA.
+
+3. Testes e Avaliação
+Simulações de Jogo: Realização de testes com grupos de jogadores para avaliar a eficácia das táticas de manipulação implementadas pela IA.
+Feedback dos Jogadores: Coleta de feedback sobre a experiência de jogo e a percepção de manipulação.
+Resultados Esperados
+Relatório de Práticas: Documentação das práticas de manipulação identificadas.
+Modelo de Jogo: Prototipagem de um jogo que utiliza IA para implementar variações de manipulação.
+Análise de Impacto: Avaliação do impacto da manipulação mediada por IA na experiência dos jogadores.
+Práticas de Manipulação Documentadas
+Bluffing (Blefar)
+
+Táticas de engano utilizadas por jogadores.
+Manipulação Psicológica
+
+Estratégias para influenciar decisões por meio da psicologia.
+Divisão e Conquista
+
+Isolamento de adversários para derrotá-los individualmente.
+Desvio de Atenção
+
+Direcionamento da atenção dos oponentes para manipulação de outras variáveis.
+Manipulação Emocional
+
+Exploração das emoções dos jogadores para influenciar decisões.
+Variações com IA
+Adversários Adaptativos
+
+IA que aprende e se adapta ao estilo de jogo do usuário.
+Cenários Dinâmicos
+
+Mudanças no ambiente do jogo com base nas decisões dos jogadores.
+Feedback Emocional
+
+Respostas da IA baseadas nas reações emocionais dos jogadores.
+Narrativas Personalizadas
+
+Geração de narrativas diferentes conforme as escolhas dos jogadores.
+Conclusão
+Este projeto busca não apenas entender a manipulação em jogos, mas também explorar como a inteligência artificial pode enriquecer essa dinâmica. As implicações éticas e sociais dessas práticas são temas de discussão essenciais que devem ser considerados à medida que avançamos na criação de experiências de jogo mais imersivas e interativas.
+  
