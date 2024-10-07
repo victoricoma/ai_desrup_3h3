@@ -1,8 +1,8 @@
 Informaçoes do vídeo:
 Este vídeo de apresentação tem como objetivo introduzir os visitantes ao nosso tema e explicar como funcionará nossa dinâmica. 
-A proposta do tema da feira é um roleplay ambientado em um mundo onde forças alienígenas utilizam a desinformação como arma para dominar a Terra, baseado no Teorema dos Três Corpos. 
+A proposta do tema da feira é um roleplay ambientado em um mundo onde forças alienígenas utilizam a desinformação como arma para dominar a Terra, (baseado no Teorema dos Três Corpos). 
 Estamos formando uma equipe para participar "visitantes" de treinamentos que ajudarão a distinguir o que é real. 
-O vídeo contará com um avatar "animado" que explicará o contexto, acompanhado de imagens que facilitarão a compreensão.
+O vídeo contará com um avatar "animado" que explicará o contexto, acompanhado de imagens que facilitarão a compreensão ao longo do vídeo. 
 Duração do vídeo: 1 a 2 minutos
 Proporção da tela: 16:9 (1280 x 720)
 
@@ -13,36 +13,36 @@ Roteiro para o Vídeo de Apresentação:
 Avatar: 
 iniciar o vídeo com ["1-avatar-base.png"].
 Bem-vindos, agentes ["2-avatar-levantando-a-mão.png"]. 
-Vocês fazem parte de nossa força tarefa, e sua missão é crucial. Estamos em uma situação de emergência.[usar "1.1-avatar-base.png" e "1.2-avatar-base.png" para dar impressão do avatar falando]
+Vocês fazem parte de nossa força tarefa, e sua missão é crucial. Estamos em uma situação de emergência.["1.1-avatar-base.png" / "1.2-avatar-base.png" para dar impressão do avatar falando]
 
 [Cena 2: Fundo cósmico, imagens de planetas]
 
 Avatar:
-Recentemente, descobrimos que forças cósmicas podem interagir de formas imprevisíveis, afetando o equilíbrio do nosso sistema.["o alienigena com uma navizinha no espaço"] 
-Alienígenas se aproximam da Terra, não para nos destruir, mas para nos dominar por meio de informações falsas.["alienigena nave clicar no botão/ saindo rainho e chegando na terra"]
+Recentemente, descobrimos que forças cósmicas podem interagir de formas imprevisíveis, afetando o equilíbrio do nosso sistema.["planeta-alien.png"] 
+Alienígenas se aproximam da Terra, não para nos destruir, mas para nos dominar por meio de informações falsas.["alien-nave.png" / "alien-botao.png" / "alien-ckick.png" sequência planeta alien, alien na nave no espaço e clicando no botão e saindo raio em direção a Terra]
 
-[Cena 3: Imagens de alienígenas e gráficos de manipulação]
+[Cena 3:]
 
 Avatar:
-Essas entidades estão disseminando dados falsos para reduzir nossa capacidade cognitiva, gerando confusão sobre a realidade. ["rainho chegando na terra e fazendo algo burro"].
-Como agentes da verdade, é seu dever aprender a discernir o que realmente importa.["2-avatar-levantando-a-mão.png"]. 
+Essas entidades estão disseminando dados falsos para reduzir nossa capacidade cognitiva, gerando confusão sobre a realidade. ["cena-cidade.png" / "cena-cidade_raio.png"].
+Como agentes da verdade, é seu dever aprender a discernir o que realmente importa.["avatar-aponta.png"]. 
 
 [Cena 4: Efeitos visuais de ondas de informação e manipulação]
 
 Avatar:
-Hoje, você passará por uma série de desafios que irão testar sua capacidade de pensar criticamente e resistir à influência externa.["avatar confiante"]
-Prepare-se para situações que poderão desviar sua atenção e manipular suas escolhas.
+Hoje, você passará por uma série de desafios que irão testar sua capacidade de pensar criticamente e resistir à influência externa.
+Prepare-se para situações que poderão desviar sua atenção e manipular suas escolhas.["fazer no telão, efeitos visuais para essa parte"]
 
-[Cena 5: Chamada para ação com urgência]
+[Cena 5: Chamada para ação com urgência(momento sério)]
 
 Avatar:
 Em breve, você terá a oportunidade de mostrar o que aprendeu. 
-O futuro da nossa humanidade depende do seu discernimento e da sua habilidade de perceber a verdade em meio à confusão.
+O futuro da nossa humanidade depende do seu discernimento e da sua habilidade de perceber a verdade em meio à confusão.["chiar a tela e trazer o avatar pra frete user - avatar-sério_1" / "avatar-sério_2"]
 
 [Cena 6: Encerramento com determinação]
 
 Avatar:
-"Está pronto para discernir a realidade? Os desafios começam agora. Boa sorte, agentes."["avatar desejando boa sorte"]
+Está pronto para discernir a realidade? Os desafios começam agora. Boa sorte, agentes.["avatar-final.png"]
 [Fade out com música de fundo intensa]
 
 
