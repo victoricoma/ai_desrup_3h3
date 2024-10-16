@@ -1,0 +1,15 @@
+- Após cada grupo apresentar suas partes, os visitantes serão guiados à última apresentação, consistindo de um quiz com 5 perguntas escolhidas aleatóriamente de uma lista.
+- Essas perguntas envolvem temas conhecidos variados, com grande chance dos visitantes já terem algum conhecimento sobre.
+- Após terem passado pelos 3 outros grupos, os visitantes provavelmente estarão com certo receio de serem manipulados, logo os apresentadores do quiz irão casualmente tentar
+apontar para uma das quatro respostas possíveis. Sendo a resposta apontada correta ou não, o ponto é plantar a semente da dúvida nos visitantes, que tentarão adivinhar se o
+apresentador está apontando a correta ou manipulando-os a escolher uma resposta errada.
+
+- Roteiro para o apresentador:
+    Sugerir a resposta correta na primeira pergunta, se:
+        Os visitantes seguirem a sugestão, e acertarem: sugerir uma resposta incorreta na próxima questão.
+        Os visitantes seguirem a sugestão, e errarem: segerir uma resposta correta na próxima questão.
+        Os visitantes não seguirem a sugestão, e acertarem: não sugerir nada na próxima, sugira a correta na terceira.
+        Os visitantes não seguirem a sugestão, e errarem: não sugerir nada na próxima, se:
+            Os visitantes acertarem a segunda: sugerir a correta na terceita.
+            Os visitantes errarem a segunda: sugerir uma incorreta na terceita.
+    A quarta e quinta questões são livres, adaptar-se ao humor do grupo de visitantes e de quantas acertaram até o momento para se decidir.
