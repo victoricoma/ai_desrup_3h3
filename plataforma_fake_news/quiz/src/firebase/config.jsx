@@ -16,4 +16,4 @@ const app = initializeApp(firebaseConfig)
 const analytics = getAnalytics(app)
 const messaging = getMessaging(app)
 
-export { messaging }
+export { messaging, app }
