@@ -1,48 +1,55 @@
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
-import { useState, useEffect } from 'react'
-import { app } from "../firebase/config"
+import { useState, useEffect } from 'react';
+import { app } from "../firebase/config";
 
 export const useMessage = () => {
-    const [message, setMessage] = useState("")
+    const [message, setMessage] = useState("");
 
     const messaging = getMessaging(app);
 
-    async function solicitarNoticacao() {
+    function solicitarNoticacao() {
         Notification.requestPermission().then((permission) => {
+            console.log("Permissão de notificação:", permission); // Verificar a permissão
             if (permission === "granted") {
-                alert("Obrigado pela permissão de notificação")
+                console.log("Permissão concedida, buscando token...");
+
+                getToken(messaging, {
+                    vapidKey: 'BLfXC3zTmk9Vec55d2tWB0qdj4DaU03Ph4FlcZWLtZO7JfUSNDwuuqzXal4VmEAh759XL-9WAJXeP_GKzLwjyiQ'
+                })
+                    .then((currentToken) => {
+                        if (currentToken) {
+                            console.log("Client Token:", currentToken); // Verifica se o token foi obtido corretamente
+                            setMessage(currentToken); // Armazena o token na variável de estado
+                        } else {
+                            console.log('Nenhum token disponível. Por favor, solicite permissão para gerar um token.');
+                        }
+                    })
+                    .catch((err) => {
+                        console.error('Erro ao buscar o token do FCM:', err); // Mostra erros no console
+                    });
+            } else {
+                console.log("Permissão para notificações não foi concedida.");
             }
-
-
-            getToken(messaging, {
-                vapidKey: 'BLfXC3zTmk9Vec55d2tWB0qdj4DaU03Ph4FlcZWLtZO7JfUSNDwuuqzXal4VmEAh759XL-9WAJXeP_GKzLwjyiQ'
-            })
-                .then((currentToken) => {
-                    if (currentToken) {
-                        console.log(messaging)
-                        setMessage(messaging)
-                    } else {
-                        console.log('Deu ruim no token!')
-                    }
-                }).catch((err) => {
-                    console.log('Erro cloud: ', err)
-                });
-        }
-        )
+        });
     }
 
     const onMessageListener = () => {
-        new Promise(resolve => {
+        return new Promise(resolve => {
             onMessage(messaging, payload => {
-                resolve(payload)
-            })
-        })
-    }
+                console.log("Mensagem recebida:", payload); // Log da mensagem recebida
+                resolve(payload);
+            });
+        });
+    };
+
+    // Chama a função solicitarNoticacao no início
+    useEffect(() => {
+        solicitarNoticacao();
+    }, []);
 
     return {
         solicitarNoticacao,
         onMessageListener,
         message
-    }
-
-}
+    };
+};

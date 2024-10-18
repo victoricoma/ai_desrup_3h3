@@ -1,18 +1,32 @@
-import { getMessaging, getToken } from "firebase/messaging";
+// Import scripts do Firebase Messaging
+importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js');
+importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js');
 
-// Get registration token. Initially this makes a network call, once retrieved
-// subsequent calls to getToken will return from cache.
-const messaging = getMessaging();
-getToken(messaging, { vapidKey: '<YOUR_PUBLIC_VAPID_KEY_HERE>' }).then((currentToken) => {
-  if (currentToken) {
-    // Send the token to your server and update the UI if necessary
-    // ...
-  } else {
-    // Show permission request UI
-    console.log('No registration token available. Request permission to generate one.');
-    // ...
-  }
-}).catch((err) => {
-  console.log('An error occurred while retrieving token. ', err);
-  // ...
+// Configurações do Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyBG9E6sm39XIq2u1fZqBcjtgVjbBj82f7I",
+    authDomain: "site-icoma.firebaseapp.com",
+    projectId: "site-icoma",
+    storageBucket: "site-icoma.appspot.com",
+    messagingSenderId: "1017122050471",
+    appId: "1:1017122050471:web:d0f0fdd2b2e4496dc76682",
+    measurementId: "G-LZMEKHFYXX"
+};
+
+// Inicializa o Firebase no Service Worker
+firebase.initializeApp(firebaseConfig);
+
+const messaging = firebase.messaging();
+
+// Manipula mensagens de background
+messaging.onBackgroundMessage(function(payload) {
+    console.log('[firebase-messaging-sw.js] Recebeu uma mensagem de background ', payload);
+
+    const notificationTitle = payload.notification.title;
+    const notificationOptions = {
+        body: payload.notification.body,
+        icon: '/firebase-logo.png'
+    };
+
+    self.registration.showNotification(notificationTitle, notificationOptions);
 });
