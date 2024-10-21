@@ -17,3 +17,37 @@
   border: 2px solid #fff;
   margin: 1rem;
 }
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
+#end-screen {
+  text-align: center;
+  padding: 20px;
+}
+
+.next-question-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.next-question-btn:hover {
+  background-color: #0056b3;
+}

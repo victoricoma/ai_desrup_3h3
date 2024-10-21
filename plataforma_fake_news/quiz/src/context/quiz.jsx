@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 import questions from "../data/questions_complete";
 
-const STAGES = ["Start", "Category", "Playing", "End"];
+const STAGES = ["Start", "Email", "Category", "Playing", "End"];
 
 const initialState = {
   gameStage: STAGES[0],
@@ -11,63 +11,102 @@ const initialState = {
   score: 0,
   help: false,
   optionToHide: null,
+  emails: []
 };
 
-console.log(initialState);
+console.log("Estado inicial: ", initialState);
 
 const quizReducer = (state, action) => {
   switch (action.type) {
-    case "CHANGE_STAGE":
+    
+    case "COLLECT_PHONE_NUMBERS":
       return {
         ...state,
+        emails: action.payload,
+        gameStage: STAGES[2], // Vai para a fase de "Playing"
+      };
+
+    case "END_GAME":
+      return {
+        ...state,
+        gameStage: STAGES[4], // Vai para a fase de "Playing"
+      };
+      
+    case "CHANGE_STAGE":
+      const newShuffledQuestions = state.questions.sort(() => Math.random() - 0.5).slice(0, 3);
+
+      return {
+        ...state,
+
+        questions: newShuffledQuestions,
         gameStage: STAGES[1],
       };
 
       case "START_GAME":
-        let quizQuestions = null;
+        //let quizQuestions = null;
       
         // Encontra as perguntas da categoria
-        state.questions.forEach((question) => {
+        /* state.questions.forEach((question) => {
           if (question.category === action.payload) {
             quizQuestions = question.questions;
           }
-        });
+        }); */
       
-        // Embaralha as perguntas e limita a 5
-        const shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5).slice(0, 5);
-      
+        // Embaralha as perguntas e limita a 3
+        //const shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5).slice(0, 3);
+        
+//        const shuffledQuestions = state.questions.sort(() => Math.random() - 0.5).slice(0, 3);
+/*         const shuffledQuestions = state.questions;
+        console.log("questões embaralhadas: ", shuffledQuestions) */
+
         return {
           ...state,
-          questions: shuffledQuestions,
-          gameStage: STAGES[2],
+          //questions: shuffledQuestions,
+          gameStage: STAGES[3],
         };
 
     case "REORDER_QUESTIONS":
       const reorderedQuestions = state.questions.sort(() => {
         return Math.random() - 0.5;
       });
+      console.log("REORDER_QUESTIONS", reorderedQuestions)
 
       return {
         ...state,
         questions: reorderedQuestions,
       };
 
-    case "CHANGE_QUESTION": {
-      const nextQuestion = state.currentQuestion + 1;
-      let endGame = false;
-
-      if (!state.questions[nextQuestion]) {
-        endGame = true;
+      case "CHECK_ANSWER": {
+        const { option, answer } = action.payload;
+  
+        // Verifica se a resposta selecionada está correta
+        console.log("Opção:", option )
+        console.log("Resposta:", answer )
+        const isCorrect = option === answer;
+        const scoreIncrement = isCorrect ? 1 : 0;
+  
+        return {
+          ...state,
+          answerSelected: option,  // Marca a opção selecionada
+          isCorrect,  // Armazena se a resposta está correta
+          score: state.score + scoreIncrement,  // Incrementa o score se a resposta estiver correta
+        };
       }
-
-      return {
-        ...state,
-        currentQuestion: nextQuestion,
-        gameStage: endGame ? STAGES[3] : state.gameStage,
-        answerSelected: false,
-        help: false,
-      };
-    }
+  
+      case "CHANGE_QUESTION": {
+        const nextQuestion = state.currentQuestion + 1;
+        if(nextQuestion >= 3){
+          return {gameStage: STAGES[4]}
+        }
+        return {
+          ...state,
+          currentQuestion: nextQuestion,  // Atualiza para a próxima pergunta
+          answerSelected: false,  // Reseta a seleção de resposta
+          isCorrect: null,  // Reseta o status de correção
+          
+        };
+        
+      }
 
     case "NEW_GAME": {
       console.log(questions);
@@ -75,21 +114,7 @@ const quizReducer = (state, action) => {
       return initialState;
     }
 
-    case "CHECK_ANSWER": {
-      if (state.answerSelected) return state;
-
-      const answer = action.payload.answer;
-      const option = action.payload.option;
-      let correctAnswer = 0;
-
-      if (answer === option) correctAnswer = 1;
-
-      return {
-        ...state,
-        score: state.score + correctAnswer,
-        answerSelected: option,
-      };
-    }
+    
 
     case "SHOW_TIP": {
       return {
