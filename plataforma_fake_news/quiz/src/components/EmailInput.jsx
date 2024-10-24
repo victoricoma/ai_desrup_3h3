@@ -22,7 +22,7 @@ const EmailInput = () => {
       // Salvando cada número no Firestore
       for (let email of emails) {
         if (email !== '') {
-          await addDoc(collection(db, 'emails'), {
+          addDoc(collection(db, 'emails'), {
             email: email,
           });
         }
